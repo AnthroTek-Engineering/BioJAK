@@ -7,10 +7,13 @@ All required dependancies and full system are on the RPi Image.
 Plug and Play Instructions:
 
 1. Copy RPi image (.dmg) to 8gb micro SD card
+
   1.1 If using windows convert file to .iso and follow these instructions
   http://www.raspberrypi.org/documentation/installation/installing-images/windows.md
+  
   1.2 If using mac follow these instructions       
   http://www.raspberrypi.org/documentation/installation/installing-images/mac.md
+ 
   1.3 If using Linux follow these Instructions
   http://www.raspberrypi.org/documentation/installation/installing-images/linux.md
 
