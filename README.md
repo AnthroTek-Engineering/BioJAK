@@ -29,12 +29,14 @@ Plug and Play Instructions:
 4. Enter terminal or CLI Emulator and enter 'sudo nano /etc/rc.local'
 
 5. Remove '#' before the /Home/pi/BioJAK/proto_v1.1/init.d
+  5.1 ctrl-x to exit
+  5.2 enter y, then enter to save
 
 6. Unplug raspberry pi and all peripherals
 
 7. Hook up, ANT+ USB, Arduino, Wifi Module, and GPS to the USB ports
 
-8. Plug in headphones 
+8. Plug in headphones/embedded speakers
 
 9. Complile and run webserver code on desired platform (Django recomended)
  9.1 Note that RTMP (Video Stream) may require configuration to your own settings
