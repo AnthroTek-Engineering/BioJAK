@@ -36,6 +36,6 @@ Plug and Play Instructions:
  9.1 Note that RTMP (Video Stream) may require configuration to your own settings
  9.2 Contact AnthroTek support for additional help
 
-11. Power up Pi and wait for voice prtompts 
+11. Power up Pi and wait for voice prompts 
 
 12. Enjoy project, branch and edit as desired
