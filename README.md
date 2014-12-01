@@ -1,8 +1,12 @@
 BioJAK
 ======
 AnthroTek BioJAK Code.
+
 Arduino code does not include necessary libraries.
+
 All required dependancies and full system are on the RPi Image. 
+
+Contact john.hogg@anthrotek.ca for Trial Image. Or compile your own system with provided code.
 
 Plug and Play Instructions:
 
