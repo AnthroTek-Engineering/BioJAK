@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        
+        
+        <meta charset="utf-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+                    <title>BIOJAK COMMAND CENTER</title>
+                    
+                    <!-- Bootstrap -->
+                    <link href="/static/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+                        <link href="/static/bootstrap/css/main.css" rel="stylesheet">
+                            
+                            <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+                            <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+                            <!--[if lt IE 9]>
+                             <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+                             <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+                             <![endif]-->
+                            </head>
+    <body bgcolor="#4d4d4d">
+        
+        <!-- Navbar title -->
+        <nav class="navbar navbar-inverse" role="navigation">
+            
+            <h1 id="company">ANTHROTEK                    <img id="hdimg" src="/static/images/Untitled.png" alt="logo" style="width:50px;height:50px"></img></h1>
+        </nav>
+        <!-- navbar ends -->
+        
+        <div class="container-fluid">
+            <div class="row" id="body_padding">
+                <div id="map"class="col-md-7">
+                    <div id="googleMap" style="width:1100px;height:930px;"></div>
+                </div>
+                <div id="info"class="col-md-5">
+                    <h1 id="usrinfo">User Data</h1>
+                    <div class="container-fluid" id="userDiv">
+                        <ul id="usrinfo">
+                            <div class="col-md-6">
+                                <li><p id="data">Name : </p><p id="name"></p></li>
+                                <li><p id="data">Resting Heart Rate : </p><p id="rhr"></p></li>
+                            </div>
+                            <div class="col-md-6">
+                                <li><p id="data">Phone Number : </p><p id="phnum"></p></li>
+                                <li><p id="data">User Number : </p><p id="usrnum"></p></li>
+                            </div>
+                        </ul>
+                    </div>
+                    
+                    <h2 id="company">Sensor Network</h2>
+                    <div class="container-fluid" id="sensorDiv">
+                        <ul id="info_list">
+                            <div class="col-md-6" style"">
+                                <li><p id="data">Heart Rate : </p><p id="heartRate">0</p></li>
+                                <li><p id="data">Impacts : </p><p id="impact">0</p></li>
+                                <li><p id="data">Free-Falls : </p><p id="freefall">0</p></li>
+                                <li><p id="data">Inactivity Time : </p><p id="inact">0</p></li>
+                                <li><p id="data">Internal Temperature : </p><p id="intemp">0</p></li>
+                            </div>
+                            <div class="col-md-6">
+                                <li><p id="data">External Temperature : </p><p id="extemp">0</p></li>
+                                <li><p id="data">Temperature Differential : </p><p id="tempdif">0</p></li>
+                                <li><p id="data">Internal Humidity : </p><p id="inhum">0</p></li>
+                                <li><p id="data">External Humidity : </p><p id="exhum">0</p></li>
+                                <li><p id="data">Humidity Differential : </p><p id="humdif">0</p></li>
+                            </div>
+                        </ul>
+                    </div>
+                    
+                    <h2 id="gpsinfo">GPS Data</h2>
+                    <div class="container-fluid" id="gpsDiv">
+                        <ul id="gpsinfo">
+                            <div class="col-md-4">
+                                <li><p id="data">Latitude : </p><p id="lat">0</p></li>
+                                <li><p id="data">Longitude : </p><p id="long">0</p></li>
+                                <li><p id="data">GPS Fix : </p><p id="fix">Yes</p></li>
+                                <li><p id="data">Altitude : </p><p id="alt">0</p></li>
+                                <li><p id="data">Heading : </p><p id="head">0</p></li>
+                            </div>
+                            <div class="col-md-4">
+                                <li><p id="data">Speed : </p><p id="sp">0</p></li>
+                                <li><p id="data">Climb : </p><p id="climb">0</p></li>
+                                <li><p id="data">Mode : </p><p id="mode">0</p></li>
+                                <li><p id="data">Latitude Error : </p><p id="laterr">0</p></li>
+                                <li><p id="data">Longitude Error : </p><p id="longerr">0</p></li>
+                            </div>
+                            <div class="col-md-4">
+                                <li><p id="data">Altitude Error : </p><p id="alterr">0</p></li>
+                                <li><p id="data">Heading Error : </p><p id="headerr">0</p></li>
+                                <li><p id="data">Speed Error : </p><p id="sperr">0</p></li>
+                                <li><p id="data">Climb Error : </p><p id="climberr">0</p></li>
+                            </div>
+                        </ul>
+                    </div>
+                    
+                    
+                    <div id="video">
+                        <iframe width="770" height="460"
+                            src="https://www.youtube.com/embed/4Xb-j3CEZHM"
+                            frameborder="0" allowfullscreen>
+                        </iframe>
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div id="footer" class="container-fluid">
+                <nav class="navbar navbar-inverse navbar-fixed-bottom">
+                    <div class="navbar-inner navbar-content-center">
+                        <!-- <img src="temp/temp.png" alt="this is whats in the image"></img> -->
+                        <p class="text-muted credit"><center>By Alex Hogg, Haden Clark and Kellan King</center></p>
+                    </div>
+                </nav>
+            </div>
+            
+            </body>
+    
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="/static/bootstrap/js/bootstrap.min.js"></script>
+    <script
+        src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDY0kkJiTPVd2U7aTOAwhc9ySH6oHxOIYM&sensor=false">
+        </script>
+    <script type="text/javascript"
+        src="https://maps.googleapis.com/maps/api/js?libraries=weather&sensor=false">
+        </script>
+    
+    <script>
+        
+        var mapProp = {
+            center: new google.maps.LatLng(43.531091, -80.225786),
+            zoom:12,
+            mapTypeId:google.maps.MapTypeId.HYBRID
+        };
+    
+    // create and load map window
+    var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+    
+    google.maps.event.addDomListener(window, 'load', initialize);
+    
+    // initialize weather layer
+    
+    var weatherLayer = new google.maps.weather.WeatherLayer({
+                                                            temperatureUnits: google.maps.weather.TemperatureUnit.CELSIUS
+                                                            });
+                                                            weatherLayer.setMap(map);
+                                                            var center= new google.maps.LatLng(43.531091,-80.225786);
+                                                            
+                                                            var content ='<IMG BORDER="0" ALIGN=left WIDTH="20" HEIGHT="20" SRC="/static/images/Untitled.png">BioJAK Command Center'
+                                                            
+                                                            var infowindow = new google.maps.InfoWindow({
+                                                                                                        position:center,
+                                                                                                        content:content,
+                                                                                                        });
+                                                                                                        infowindow.open(map);
+                                                                                                        
+                                                                                                        
+                                                                                                        function initialize(latitude,longitude)
+                                                                                                        {
+                                                                                                            
+                                                                                                            var myCenter=new google.maps.LatLng(latitude,longitude);
+                                                                                                            
+                                                                                                            addMarker(myCenter);}
+    
+    
+    function addMarker(myCenter) {
+        
+        
+        // create circular marker
+        var myCircle = new google.maps.Circle({
+                                              center:myCenter,
+                                              radius:0.5,
+                                              strokeColor:"#0000FF",
+                                              strokeOpacity:0.8,
+                                              strokeWeight:2,
+                                              fillColor:"#0000FF",
+                                              fillOpacity:0.4
+                                              });
+                                              myCircle.setMap(map);
+                                              
+    }
+    
+    
+        </script>
+    <script src=http://cdn.pubnub.com/pubnub.min.js ></script>
+    
+    <script>(function(){
+             
+             // Inititialize pubnub channels
+             var pubnub = PUBNUB.init({
+                                      publish_key   : 'pub-c-23adaa2c-88f5-44ed-82ab-4e797a8902c7',
+                                      subscribe_key : 'sub-c-55cf6ccc-4585-11e4-8772-02ee2ddab7fe'
+                                      })
+             
+             
+             // LISTEN - get pubnub data
+             pubnub.subscribe({
+                              channel : ["hr_channel","impact_channel","gps_channel", "temp_channel","humidity_channel","usrid_channel"],
+                              restore: true,
+                              message :
+                              function(msg, envelope, channel){
+                              
+                              if("hr_channel" == channel){
+                              var hr = msg;
+                              if (msg >=250)
+                              {alert("Extreme Heart Rate");}
+                              document.getElementById('heartRate').innerHTML= msg;}
+                              
+                              else if("impact_channel" == channel){
+                              var force = msg;
+                              var counter = document.getElementById('impact').innerHTML;
+                              if (force.impact > counter)
+                              {alert("Impact Detected!");}
+                              
+                              document.getElementById('impact').innerHTML= force.impact;
+                              document.getElementById('freefall').innerHTML= force.freefall;
+                              document.getElementById('inact').innerHTML= force.inact;}
+                              
+                              
+                              else if("temp_channel" == channel){
+                              var temp = msg;
+                              if (temp.intemp <= -20 || temp.intemp >= 30)
+                              {alert("Extreme Weather Warning");
+                              }
+                              document.getElementById('extemp').innerHTML= temp.intemp;
+                              document.getElementById('intemp').innerHTML= temp.extemp;
+                              document.getElementById('tempdif').innerHTML = temp.extemp - temp.intemp;}
+                              
+                              else if("humidity_channel" == channel){
+                              var humidity = msg;
+                              document.getElementById('exhum').innerHTML= humidity.inhum;
+                              document.getElementById('inhum').innerHTML= humidity.exhum;
+                              document.getElementById('humdif').innerHTML = humidity.exhum - humidity.inhum;}
+                              
+                              else if("usrid_channel" == channel){
+                              var usrid = msg;
+                              
+                              document.getElementById('name').innerHTML= usrid.name;
+                              document.getElementById('rhr').innerHTML= usrid.RHR;
+                              document.getElementById('phnum').innerHTML= usrid.phNum;
+                              document.getElementById('usrnum').innerHTML= usrid.usrNum;}
+                              
+                              else if("gps_channel" == channel){
+                              var gps = msg;
+                              document.getElementById('lat').innerHTML= gps.lat;
+                              document.getElementById('long').innerHTML= gps.long;
+                              document.getElementById('head').innerHTML= gps.head;
+                              document.getElementById('alt').innerHTML= gps.alt;
+                              document.getElementById('laterr').innerHTML= gps.latErr;
+                              document.getElementById('longerr').innerHTML= gps.lonErr;
+                              document.getElementById('sperr').innerHTML= gps.spErr;
+                              document.getElementById('sp').innerHTML= gps.sp;
+                              document.getElementById('climb').innerHTML= gps.climb;
+                              document.getElementById('alterr').innerHTML= gps.altErr;
+                              document.getElementById('mode').innerHTML= gps.mode;
+                              
+                              initialize(gps.lat,gps.long);
+                              
+                              }
+                              },
+                              })
+             
+             })();
+             </script>
+</html>
